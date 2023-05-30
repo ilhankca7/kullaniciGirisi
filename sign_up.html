@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <style type="text/css">
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    *{
+      box-sizing: border-box;
+    }
+
+    #nav-1{
+      margin-bottom: 0px;
+      background-color: #100F0F;
+      color: black;
+
+    }
+    .footer{
+     
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #100F0F;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    input[type=text], input[type=password]{
+      width: 100%;
+      padding:5px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border:none;
+      background-color: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=password]:focus{
+      background-color: #ddd;
+      outline: none;
+    }
+    hr{
+      border:1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border:none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    button:hover{
+      opacity: 1;
+    }
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+    .cancelbtn ,.signupbtn {
+      float: left;
+      width: 50%;
+    }
+    .container{
+      padding: 16px;
+    }
+    .clearfix:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    @media screen and (max-width: 300px){
+      .cancelbtn , .signupbtn{
+        width: 100%;
+      }
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar  fixed-top"  id="nav-1">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">W3Scholls</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a  href="projem.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">HTML <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Header</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">Semantic Tags</a></li>
+            <li><a href="#">Table</a></li>
+            <li><a href="#">Div and Span</a></li>
+          </ul>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Selector</a></li>
+              <li><a href="#">Border</a></li>
+              <li><a href="#">Box Modal</a></li>
+              <li><a href="#">İnheritance</a></li>
+              <li><a href="#">Combinators</a></li>
+              <li><a href="#">List and Link</a></li>
+            </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Javascript <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Class Name</a></li>
+                <li><a href="#">GetElementsById</a></li>
+                <li><a href="#">GetElementsByTagName</a></li>
+                <li><a href="#">QuerySelector</a></li>
+                <li><a href="#">Deleted</a></li>
+              </ul>
+            </li>
+          </li>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <form action="/action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fii in this form to create an account.</p>
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text"  name="name" placeholder="Enter Name" required>
+
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text"  name="lastname" placeholder="Enter Lastname">
+
+      <label for="email"><b>E-Mail</b></label>
+      <input type="text" name="email" placeholder="Enter E-Mail" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat">Repeat Password</label>
+      <input type="password" name="psw-repeat" placeholder="Enter Repeat Password" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">
+        Remember Me
+      </label>
+      <p>By creating account you agree to our <a href="#" style="color: dodgerblue">Terms & Privacy</a>.</p>
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p>W3Schools, öğrenme ve eğitim için optimize edilmiştir. Okuma ve öğrenmeyi geliştirmek için örnekler basitleştirilebilir. Hatalardan kaçınmak için öğreticiler, referanslar ve örnekler sürekli gözden geçirilir, ancak tüm içeriğin tam olarak doğruluğunu garanti edemeyiz. W3Schools'u kullanırken, kullanım koşullarımızı , tanımlama bilgimizi ve gizlilik politikamızı okuyup kabul etmiş olursunuz .
+
+  Telif hakkı 1999-2022 Refsnes Data'ya aittir. Tüm hakları Saklıdır.</p>
+  <a href="#">W3Schols, W3.CSS tarafından desteklenmektedir.</a>
+</div>
+
+</body>
+</html> 
